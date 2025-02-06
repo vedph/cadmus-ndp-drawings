@@ -132,6 +132,8 @@ Technical description of a drawing: material and techniques.
 
 ## Drawing Item
 
+Each drawing belongs to a project via its group ID.
+
 - identity:
   - 🟢 [MetadataPart](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
   - 🟢 [ExternalIdsPart](https://github.com/vedph/cadmus-general/blob/master/docs/external-ids.md)
