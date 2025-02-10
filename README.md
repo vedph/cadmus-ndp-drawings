@@ -46,6 +46,8 @@ identity --> pin-links:auth
 DRAWING --> content
 content --> drawing-texts
 content --> collector-notes
+content --> note:instr
+content --> iconographies
 DRAWING --> support
 support --> drawing-tech
 support --> cod_watermarks
@@ -103,8 +105,33 @@ Technical description of a drawing: material and techniques.
     - `citation` (`string`, via brick)
     - `script` (📚 `drawing-texts-scripts`)
     - `value` (`string`)
-    - `author` ([AssertedCompositeId](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-id)): `tag` can be used for his role (stesso autore disegno etc).
+    - `author` (`AssertedId[]` see [AssertedCompositeId](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-id)): `tag` can be used for his role (stesso autore disegno etc).
     - `date` ([HistoricalDate](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-historical-date/README.md))
+
+### IconographiesPart
+
+- ⭐ `IconographiesPart`:
+  - `iconographies` (`Iconography[]`):
+    - `macroSubjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree)
+    - `subjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree) ⚠️ Consider merging both into a single hierarchical taxonomy; we can have a root with two independent branches for macro-subjects and subjects, or subjects as children of macro-subjects. The point is: how generisable is a twofold grouping of subjects? Other projects would have 1, 2, 3... it just depends on the nesting level. So in theory a single tree with variable nesting would fit better.
+    - `description` (`string`, MD, 5000)
+    - `relCitations` (`IcoRelCitation[]`):
+      - `citations`\* (`string[]` via citation brick)
+      - `tag` (`string`, 📚 `iconography-cit-tags`)
+      - `note` (`string`, 1000)
+    - `relTexts` (`IcoRelText[]`):
+      - `type`\* (`string` 📚 `iconography-txt-types`)
+      - `tag` (`string1` 📚 `iconography-txt-tags`)
+      - `language`\* (`string` 📚 `iconography-txt-languages`)
+      - `value` (`string`)
+      - `note` (`string`, 1000)
+    - `features` (`string[]` flags: 📚 `iconography-features`): storie prime/seconde, etc.
+    - `contexts`  (string[], 📚 `iconography-context-links`, categories tree): luoghi danteschi etc.
+    - `links` (`AssertedId[]`; see [AssertedCompositeIds](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-ids)): to mss etc.
+    - `note` (`string`, 1000)
+    - `keywords` (`Keyword[]`):
+      - `language`\* (string 📚 `iconography-key-languages`)
+      - `value`\* (`string`)
 
 ## Project Item
 
@@ -142,7 +169,8 @@ Each drawing belongs to a project via its group ID.
 - content:
   - ⭐ [DrawingTextsPart](#drawingtextspart)
   - ⭐ [CollectorNotesPart](#collectornotespart)
-  - [NotePart](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`instr` istruzioni realizzazione
+  - 🟢 [NotePart](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`instr` istruzioni realizzazione
+  - ⭐ [IconographiesPart](#iconographiespart)
 - support:
   - ⭐ [DrawingTechPart](#drawingtechpart)
   - 📖 [CodWatermarksPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md)
@@ -151,5 +179,3 @@ Each drawing belongs to a project via its group ID.
 - editorial:
   - 🟢 [ExtBibliographyPart](https://github.com/vedph/cadmus-general/blob/master/docs/ext-bibliography.md)
   - 🟢 [NotePart](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`fort`: "fortuna critica".
-
-- iconography part: ❓ to be defined as cross-project.
