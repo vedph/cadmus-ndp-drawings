@@ -77,7 +77,7 @@ A set of drawings belonging to a single project.
 
 - ⭐ `DrawingSetPart`:
   - `material` (📚 `drawing-set-materials`)
-  - `bound` (`boolean`): true if drawings are bound.
+  - `bound` (`string` 📚 `drawing-set-bindings`): bound sheets, once bound sheets, etc.
   - [decorated counts brick](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-decorated-counts/README.md) (📚 `drawing-set-counts-ids`, 📚 `drawing-set-counts-tags`)
   - `features` (`string[]` 📚 `drawing-set-features`)
   - `targets` (`DrawingSetTarget[]`):
