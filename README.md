@@ -115,11 +115,11 @@ Technical description of a drawing: material and techniques.
       - `value` (`string`)
       - `note` (`string`, 1000)
     - `features` (`string[]` flags: 📚 `iconography-features`): storie prime/seconde, etc.
-    - `contexts`  (string[], 📚 `iconography-context-links`, categories tree): luoghi danteschi etc.
+    - `contexts`  (`string[]`, 📚 `iconography-context-links`, categories tree): luoghi danteschi etc.
     - `links` (`AssertedId[]`; see [AssertedCompositeIds](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-ids)): to mss etc.
     - `note` (`string`, 1000)
     - `keywords` (`Keyword[]`):
-      - `language`\* (string 📚 `iconography-key-languages`)
+      - `language`\* (`string` 📚 `iconography-key-languages`)
       - `value`\* (`string`)
 
 ## Project Item
