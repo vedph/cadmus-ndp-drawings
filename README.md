@@ -110,7 +110,7 @@ Technical description of a drawing: material and techniques.
       - `note` (`string`, 1000)
     - `relTexts` (`IcoRelText[]`):
       - `type`\* (`string` 📚 `iconography-txt-types`)
-      - `tag` (`string1` 📚 `iconography-txt-tags`)
+      - `tag` (`string` 📚 `iconography-txt-tags`)
       - `language`\* (`string` 📚 `iconography-txt-languages`)
       - `value` (`string`)
       - `note` (`string`, 1000)
