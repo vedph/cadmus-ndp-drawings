@@ -66,7 +66,7 @@ Collector notes on the support.
 
 - ⭐ `CollectorNotesPart`:
   - `notes` (`CollectorNote[]`):
-    - `type` (📚 `collector-note-type`: text, stamp, label...)
+    - `type` (📚 `collector-note-types`: text, stamp, label...)
     - `position` (📚 `collector-note-positions`: top, bottom...)
     - `date` ([HistoricalDate](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-historical-date/README.md))
     - `note` (`string`)
