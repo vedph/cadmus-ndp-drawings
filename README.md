@@ -102,8 +102,7 @@ Technical description of a drawing: material and techniques.
 - ⭐ `IconographiesPart`:
   - `iconographies` (`Iconography[]`):
     - `eid` (`string`)
-    - `macroSubjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree)
-    - `subjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree) ⚠️ Consider merging both into a single hierarchical taxonomy; we can have a root with two independent branches for macro-subjects and subjects, or subjects as children of macro-subjects. The point is: how generisable is a twofold grouping of subjects? Other projects would have 1, 2, 3... it just depends on the nesting level. So in theory a single tree with variable nesting would fit better.
+    - `subjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree)
     - `description` (`string`, MD, 5000)
     - `relCitations` (`IcoRelCitation[]`):
       - `citations`\* (`string[]` via citation brick)
