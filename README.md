@@ -60,17 +60,6 @@ editorial --> note:fort
 
 ## New Parts
 
-### CollectorNotesPart
-
-Collector notes on the support.
-
-- ⭐ `CollectorNotesPart`:
-  - `notes` (`CollectorNote[]`):
-    - `type` (📚 `collector-note-types`: text, stamp, label...)
-    - `position` (📚 `collector-note-positions`: top, bottom...)
-    - `date` ([HistoricalDate](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-historical-date/README.md))
-    - `note` (`string`)
-
 ### DrawingSetPart
 
 A set of drawings belonging to a single project.
@@ -169,7 +158,7 @@ Each drawing belongs to a project via its group ID.
   - [PinLinksPart](https://github.com/vedph/cadmus-general/blob/master/docs/fr.pin-links.md):`auth` for authors.
 - content:
   - ⭐ [DrawingTextsPart](#drawingtextspart)
-  - ⭐ [CollectorNotesPart](#collectornotespart)
+  - ⭐ [CodEditsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md): note collezione
   - 🟢 [NotePart](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`instr` istruzioni realizzazione
   - ⭐ [IconographiesPart](#iconographiespart)
 - support:
