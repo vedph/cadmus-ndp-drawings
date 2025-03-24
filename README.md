@@ -84,7 +84,7 @@ Technical description of a drawing: material and techniques.
   - `features` (📚 `drawing-tech-features`)
   - [measurements brick](https://github.com/vedph/cadmus-bricks-shell-v3/tree/master/projects/myrmidon/cadmus-mat-physical-size#physicalmeasurementset) (📚 `drawing-tech-size-units`, 📚 `drawing-tech-dim-tags`, 📚 `drawing-tech-set-names`)
   - `techniques` (`string[]` flags: 📚 `drawing-tech-techniques`)
-  - `watercolors` (`string[]` flags: 📚 `drawing-tech-watercolors`); if any is present then "acquerellature" is implied.
+  - `colors` (`string[]` flags: 📚 `drawing-tech-watercolors`)
 
 ### DrawingTextsPart
 
