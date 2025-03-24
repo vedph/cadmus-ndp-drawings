@@ -159,7 +159,7 @@ Each drawing belongs to a project via its group ID.
 - content:
   - ⭐ [DrawingTextsPart](#drawingtextspart)
   - ⭐ [CodEditsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md): note collezione
-  - 📖 [IconographiInstructionsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-illum-instructions.md)
+  - 📖 [IconographicInstructionsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-illum-instructions.md)
   - ⭐ [IconographiesPart](#iconographiespart)
 - support:
   - ⭐ [DrawingTechPart](#drawingtechpart)
