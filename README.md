@@ -97,31 +97,6 @@ Technical description of a drawing: material and techniques.
     - `author` (`AssertedId[]` see [AssertedCompositeId](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-id)): `tag` can be used for his role (stesso autore disegno etc).
     - `date` ([HistoricalDate](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-historical-date/README.md))
 
-### IconographiesPart
-
-- ⭐ `IconographiesPart`:
-  - `iconographies` (`Iconography[]`):
-    - `eid` (`string`)
-    - `subjects`\* (`string[]` 📚 `iconography-macro-subjects`, categories tree)
-    - `description` (`string`, MD, 5000)
-    - `relCitations` (`IcoRelCitation[]`):
-      - `citations`\* (`string[]` via citation brick)
-      - `tag` (`string`, 📚 `iconography-cit-tags`)
-      - `note` (`string`, 1000)
-    - `relTexts` (`IcoRelText[]`):
-      - `type`\* (`string` 📚 `iconography-txt-types`)
-      - `tag` (`string` 📚 `iconography-txt-tags`)
-      - `language`\* (`string` 📚 `iconography-txt-languages`)
-      - `value` (`string`)
-      - `note` (`string`, 1000)
-    - `features` (`string[]` flags: 📚 `iconography-features`): storie prime/seconde, etc.
-    - `contexts`  (`string[]`, 📚 `iconography-context-links`, categories tree): luoghi danteschi etc.
-    - `links` (`AssertedId[]`; see [AssertedCompositeIds](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-ids)): to mss etc.
-    - `note` (`string`, 1000)
-    - `keywords` (`Keyword[]`):
-      - `language`\* (`string` 📚 `iconography-key-languages`)
-      - `value`\* (`string`)
-
 ## Project Item
 
 - identity:
@@ -158,8 +133,8 @@ Each drawing belongs to a project via its group ID.
 - content:
   - ⭐ [DrawingTextsPart](#drawingtextspart)
   - ⭐ [CodEditsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md): note collezione
-  - 📖 [IconographicInstructionsPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-illum-instructions.md)
-  - ⭐ [IconographiesPart](#iconographiespart)
+  - ⭐ [IcoIconographiesPart](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-iconographies.md)
+  - ⭐ [IcoInstructionsPart](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md)
 - support:
   - ⭐ [DrawingTechPart](#drawingtechpart)
   - 📖 [CodWatermarksPart](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md)
