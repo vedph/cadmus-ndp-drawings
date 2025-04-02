@@ -90,7 +90,7 @@ Technical description of a drawing: material and techniques.
 
 - ⭐ `DrawingTextsPart`:
   - `texts` (`DrawingText[]`):
-    - `type`\* (📚 `drawing-texts-types`: text, comment, other...)
+    - `types`\* (`string[]` 📚 `drawing-texts-types`: text, comment, other...)
     - `citation` (`string`, via brick)
     - `script` (📚 `drawing-texts-scripts`)
     - `value` (`string`)
