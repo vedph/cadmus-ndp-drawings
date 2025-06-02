@@ -91,6 +91,7 @@ Technical description of a drawing: material and techniques.
 - ⭐ `DrawingTextsPart`:
   - `texts` (`DrawingText[]`):
     - `types`\* (`string[]` 📚 `drawing-texts-types`: text, comment, other...)
+    - `position` (`string`, 📚 `drawing-texts-positions`: the position of the text in the drawing sheet, e.g. recto, verso, etc.)
     - `citation` (`string`, via brick)
     - `script` (📚 `drawing-texts-scripts`)
     - `value` (`string`)
