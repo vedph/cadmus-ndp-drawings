@@ -88,6 +88,8 @@ Technical description of a drawing: material and techniques.
 
 ### DrawingTextsPart
 
+Obsoleted, replace with [COD edits part](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md).
+
 - ⭐ `DrawingTextsPart`:
   - `texts` (`DrawingText[]`):
     - `types`\* (`string[]` 📚 `drawing-texts-types`: text, comment, other...)
