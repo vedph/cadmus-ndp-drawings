@@ -29,7 +29,7 @@ Technical description of a drawing: material and techniques.
     - `value`\* (`float`)
     - `unit` (`string`)
   - `techniques` (`string[]` flags: 📚 `drawing-tech-techniques`)
-  - `colors` (`string[]` flags: 📚 `drawing-tech-watercolors`)
+  - `colors` (`string[]` flags: 📚 `drawing-tech-colors`)
   - `note` (`string`)
 
 ### Obsoleted Parts
