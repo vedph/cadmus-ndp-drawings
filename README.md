@@ -21,16 +21,16 @@ For items definitions see [this page](https://github.com/vedph/cadmus-ndp-api).
 Technical description of a drawing: material and techniques.
 
 - ⭐ `DrawingTechPart`:
-  - `material` (📚 `drawing-tech-materials`)
-  - `note` (`string`)
+  - `material`\* (📚 `drawing-tech-materials`)
   - `features` (📚 `drawing-tech-features`)
-  - `measures` (`PhysicalMeasurement[]`) via [measurements brick](https://github.com/vedph/cadmus-bricks-shell-v3/tree/master/projects/myrmidon/cadmus-mat-physical-size#physicalmeasurementset) (📚 `drawing-tech-size-units`, 📚 `drawing-tech-dim-tags`, 📚 `drawing-tech-set-names`):
+  - `measures` (`PhysicalMeasurement[]`) via [measurements brick](https://github.com/vedph/cadmus-bricks-shell-v3/tree/master/projects/myrmidon/cadmus-mat-physical-size#physicalmeasurementset) (📚 `drawing-tech-size-units`, 📚 `drawing-tech-dim-tags`, 📚 `drawing-tech-measure-names`):
     - `name`\* (`string`)
     - `tag` (`string`)
     - `value`\* (`float`)
     - `unit` (`string`)
   - `techniques` (`string[]` flags: 📚 `drawing-tech-techniques`)
   - `colors` (`string[]` flags: 📚 `drawing-tech-watercolors`)
+  - `note` (`string`)
 
 ### Obsoleted Parts
 
