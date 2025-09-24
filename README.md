@@ -61,3 +61,9 @@ DrawingTextsPart: replaced with [COD edits part](https://github.com/vedph/cadmus
     - `value` (`string`)
     - `author` (`AssertedId[]` see [AssertedCompositeId](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-asserted-ids/README.md#asserted-composite-id)): `tag` can be used for his role (stesso autore disegno etc).
     - `date` ([HistoricalDate](https://github.com/vedph/cadmus-bricks-shell-v3/blob/master/projects/myrmidon/cadmus-refs-historical-date/README.md))
+
+## History
+
+### 0.0.1
+
+- 2025-09-24: initial release.

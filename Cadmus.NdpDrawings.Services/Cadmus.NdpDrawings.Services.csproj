@@ -20,6 +20,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Cadmus.Codicology.Parts" Version="8.0.15" />
+		<PackageReference Include="Cadmus.Core" Version="8.0.10" />
+		<PackageReference Include="Cadmus.General.Parts" Version="7.0.5" />
+		<PackageReference Include="Cadmus.Index.Sql" Version="9.0.3" />
+		<PackageReference Include="Cadmus.Mongo" Version="8.0.10" />
+		<PackageReference Include="Cadmus.Seed.General.Parts" Version="7.0.6" />
+		<PackageReference Include="Cadmus.Seed.Codicology.Parts" Version="8.0.17" />
+		<PackageReference Include="Fusi.Microsoft.Extensions.Configuration.InMemoryJson" Version="4.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\Cadmus.NdpDrawings.Parts\Cadmus.NdpDrawings.Parts.csproj" />
 		<ProjectReference Include="..\Cadmus.Seed.NdpDrawings.Parts\Cadmus.Seed.NdpDrawings.Parts.csproj" />
 	</ItemGroup>
