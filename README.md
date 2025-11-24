@@ -64,6 +64,10 @@ DrawingTextsPart: replaced with [COD edits part](https://github.com/vedph/cadmus
 
 ## History
 
+### 1.0.0
+
+- 2025-11-24: ⚠️ upgraded to NET 10.
+
 ### 0.0.2
 
 -  2025-10-08: updated packages.
