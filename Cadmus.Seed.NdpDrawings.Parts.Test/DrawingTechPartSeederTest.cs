@@ -18,7 +18,7 @@ public sealed class DrawingTechPartSeederTest
     public void TypeHasTagAttribute()
     {
         Type t = typeof(DrawingTechPartSeeder);
-        TagAttribute? attr = t.GetTypeInfo().GetCustomAttribute<TagAttribute>();
+        TagAttribute attr = t.GetTypeInfo().GetCustomAttribute<TagAttribute>();
         Assert.NotNull(attr);
         Assert.Equal("seed.it.vedph.ndp.drawing-tech", attr!.Tag);
     }
@@ -29,11 +29,11 @@ public sealed class DrawingTechPartSeederTest
         DrawingTechPartSeeder seeder = new();
         seeder.SetSeedOptions(_seedOptions);
 
-        IPart? part = seeder.GetPart(_item, null, _factory);
+        IPart part = seeder.GetPart(_item, null, _factory);
 
         Assert.NotNull(part);
 
-        DrawingTechPart? p = part as DrawingTechPart;
+        DrawingTechPart p = part as DrawingTechPart;
         Assert.NotNull(p);
 
         TestHelper.AssertPartMetadata(p!);
