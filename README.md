@@ -64,6 +64,10 @@ DrawingTextsPart: replaced with [COD edits part](https://github.com/vedph/cadmus
 
 ## History
 
+### 1.0.5
+
+- 2026-04-28: updated packages.
+
 ### 1.0.4
 
 - 2026-03-22: updated packages.
